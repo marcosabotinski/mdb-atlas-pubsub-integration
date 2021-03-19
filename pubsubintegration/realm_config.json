@@ -1,0 +1,7 @@
+{
+    "app_id": "pubsubintegration-lmfsr",
+    "config_version": 20210101,
+    "name": "pubsubintegration",
+    "location": "DE-FF",
+    "deployment_model": "LOCAL"
+}

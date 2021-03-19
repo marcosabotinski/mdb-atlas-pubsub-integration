@@ -1,0 +1,5 @@
+{
+    "name": "access_token",
+    "value": "app_key",
+    "from_secret": true
+}
