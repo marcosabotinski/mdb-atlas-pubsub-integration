@@ -17,7 +17,7 @@ exports = async function(changeEvent) {
       }]
   };
   
-  logm = await http.post({
+  response = await http.post({
     url: endpoint,
     headers: {
       "Content-Type": [ "application/json" ],
@@ -29,10 +29,9 @@ exports = async function(changeEvent) {
     encodeBodyAsJSON: true
   })
   .then(response => {
-    const ejson_body = EJSON.parse(response.body.text());
-    return ejson_body;
+    return EJSON.parse(response.body.text());
   });
   
-  console.log(JSON.stringify(logm))
+  console.log(JSON.stringify(response))
   return
 }
