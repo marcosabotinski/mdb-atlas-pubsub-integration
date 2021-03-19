@@ -6,7 +6,7 @@ exports = async function(changeEvent) {
   jsonString = JSON.stringify(changeEvent);
   buffer = Buffer.from(jsonString);
   messagedata = buffer.toString('base64');
-  bearer = "Bearer " + context.values.get("access_token");
+  bearer = "Bearer " + context.values.get("akey");
   pubsubenvelope = {
     "messages": [
       {
